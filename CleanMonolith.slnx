@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CleanMonolith.API/CleanMonolith.API.csproj" />
+  <Project Path="CleanMonolith.Application/CleanMonolith.Application.csproj" />
+  <Project Path="CleanMonolith.Domain/CleanMonolith.Domain.csproj" />
+  <Project Path="CleanMonolith.Infrastructure/CleanMonolith.Infrastructure.csproj" />
+</Solution>

@@ -1,0 +1,11 @@
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\bin\Debug\net10.0\CleanMonolith.Domain.deps.json
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\bin\Debug\net10.0\CleanMonolith.Domain.dll
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\bin\Debug\net10.0\CleanMonolith.Domain.pdb
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.AssemblyInfoInputs.cache
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.AssemblyInfo.cs
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.dll
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\refint\CleanMonolith.Domain.dll
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\CleanMonolith.Domain.pdb
+C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.Domain\obj\Debug\net10.0\ref\CleanMonolith.Domain.dll

@@ -1,0 +1,99 @@
+2026-04-01 08:25:29.831 +05:30 [INF] User profile is available. Using 'C:\Users\tamil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-01 08:25:31.306 +05:30 [INF] Now listening on: https://localhost:7065
+2026-04-01 08:25:31.512 +05:30 [INF] Now listening on: http://localhost:5256
+2026-04-01 08:25:31.668 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 08:25:31.697 +05:30 [INF] Hosting environment: Development
+2026-04-01 08:25:31.716 +05:30 [INF] Content root path: C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.API
+2026-04-01 08:25:58.119 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:25:58.561 +05:30 [INF] HTTP GET /swagger responded 404 in 109.9608 ms
+2026-04-01 08:25:58.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 500.4368ms
+2026-04-01 08:25:58.635 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:26:05.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/ - null null
+2026-04-01 08:26:05.693 +05:30 [INF] HTTP GET / responded 404 in 0.8976 ms
+2026-04-01 08:26:05.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/ - 404 null null 17.7523ms
+2026-04-01 08:26:05.702 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/, Response status code: 404
+2026-04-01 08:26:36.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/ - null null
+2026-04-01 08:26:36.279 +05:30 [INF] HTTP GET / responded 404 in 6.4048 ms
+2026-04-01 08:26:36.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/ - 404 null null 21.3922ms
+2026-04-01 08:26:36.292 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/, Response status code: 404
+2026-04-01 08:28:29.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5256/swagger - null null
+2026-04-01 08:28:29.870 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5256/swagger - 307 null null 30.3334ms
+2026-04-01 08:28:29.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:28:29.885 +05:30 [INF] HTTP GET /swagger responded 404 in 0.2482 ms
+2026-04-01 08:28:29.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 11.6061ms
+2026-04-01 08:28:29.893 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:28:46.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:28:46.395 +05:30 [INF] HTTP GET /swagger responded 404 in 0.1326 ms
+2026-04-01 08:28:46.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 14.3207ms
+2026-04-01 08:28:46.411 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:29:01.022 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:29:01.035 +05:30 [INF] HTTP GET /swagger responded 404 in 0.2456 ms
+2026-04-01 08:29:01.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 16.7105ms
+2026-04-01 08:29:01.073 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:30:00.235 +05:30 [INF] User profile is available. Using 'C:\Users\tamil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-01 08:30:00.646 +05:30 [INF] Now listening on: https://localhost:7065
+2026-04-01 08:30:00.648 +05:30 [INF] Now listening on: http://localhost:5256
+2026-04-01 08:30:00.749 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 08:30:00.752 +05:30 [INF] Hosting environment: Development
+2026-04-01 08:30:00.752 +05:30 [INF] Content root path: C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.API
+2026-04-01 08:41:43.168 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5256/swagger - null null
+2026-04-01 08:41:43.345 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5256/swagger - 307 null null 184.1709ms
+2026-04-01 08:41:43.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:41:43.524 +05:30 [INF] HTTP GET /swagger responded 404 in 74.0304 ms
+2026-04-01 08:41:43.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 101.4466ms
+2026-04-01 08:41:43.560 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:41:46.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:41:46.468 +05:30 [INF] HTTP GET /swagger responded 404 in 1.0881 ms
+2026-04-01 08:41:46.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 404 null null 45.3564ms
+2026-04-01 08:41:46.512 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7065/swagger, Response status code: 404
+2026-04-01 08:44:04.693 +05:30 [INF] User profile is available. Using 'C:\Users\tamil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-01 08:44:05.012 +05:30 [INF] Now listening on: https://localhost:7065
+2026-04-01 08:44:05.016 +05:30 [INF] Now listening on: http://localhost:5256
+2026-04-01 08:44:05.811 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 08:44:05.816 +05:30 [INF] Hosting environment: Development
+2026-04-01 08:44:05.818 +05:30 [INF] Content root path: C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.API
+2026-04-01 08:44:10.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger - null null
+2026-04-01 08:44:10.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger - 302 null null 177.2618ms
+2026-04-01 08:44:10.535 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/index.html - null null
+2026-04-01 08:44:10.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/index.html - 200 null text/html; charset=utf-8 60.3323ms
+2026-04-01 08:44:10.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/swagger-ui.css - null null
+2026-04-01 08:44:10.604 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/index.css - null null
+2026-04-01 08:44:10.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/swagger-ui-bundle.js - null null
+2026-04-01 08:44:10.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-01 08:44:10.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/_vs/browserLink - null null
+2026-04-01 08:44:10.631 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-04-01 08:44:10.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/index.css - 200 218 text/css 42.8625ms
+2026-04-01 08:44:10.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-01 08:44:10.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 24.1173ms
+2026-04-01 08:44:10.676 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-01 08:44:10.687 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-01 08:44:10.719 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/swagger-ui.css - 200 154988 text/css 117.0727ms
+2026-04-01 08:44:10.735 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-01 08:44:10.736 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/swagger-ui-standalone-preset.js - 200 229224 text/javascript 131.2274ms
+2026-04-01 08:44:10.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 149.3466ms
+2026-04-01 08:44:10.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/swagger-ui-bundle.js - 200 1468327 text/javascript 155.4932ms
+2026-04-01 08:44:11.007 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/v1/swagger.json - null null
+2026-04-01 08:44:11.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/favicon-32x32.png - null null
+2026-04-01 08:44:11.087 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 79.5221ms
+2026-04-01 08:44:11.107 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-04-01 08:44:11.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/favicon-32x32.png - 200 628 image/png 74.1736ms
+2026-04-01 08:45:19.604 +05:30 [INF] User profile is available. Using 'C:\Users\tamil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-01 08:45:19.954 +05:30 [INF] Now listening on: https://localhost:7065
+2026-04-01 08:45:19.956 +05:30 [INF] Now listening on: http://localhost:5256
+2026-04-01 08:45:20.815 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 08:45:20.818 +05:30 [INF] Hosting environment: Development
+2026-04-01 08:45:20.820 +05:30 [INF] Content root path: C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.API
+2026-04-01 08:45:27.190 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/index.html - null null
+2026-04-01 08:45:27.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/index.html - 200 null text/html; charset=utf-8 283.5793ms
+2026-04-01 08:45:27.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-01 08:45:27.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/_vs/browserLink - null null
+2026-04-01 08:45:27.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 30.1732ms
+2026-04-01 08:45:27.617 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.228ms
+2026-04-01 08:45:27.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7065/swagger/v1/swagger.json - null null
+2026-04-01 08:45:27.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7065/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 93.359ms
+2026-04-01 09:40:25.219 +05:30 [INF] User profile is available. Using 'C:\Users\tamil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-01 09:40:26.137 +05:30 [INF] Now listening on: https://localhost:7065
+2026-04-01 09:40:26.557 +05:30 [INF] Now listening on: http://localhost:5256
+2026-04-01 09:40:26.759 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 09:40:26.950 +05:30 [INF] Hosting environment: Development
+2026-04-01 09:40:26.952 +05:30 [INF] Content root path: C:\Users\tamil\OneDrive\Desktop\Tamilselvan\monolilth Backend Project\CleanMonolith.API
