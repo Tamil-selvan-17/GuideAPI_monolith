@@ -4,6 +4,6 @@ namespace CleanMonolith.Application.Interfaces;
 
 public interface IJwtProvider
 {
-    string GenerateToken(User user);
+    string GenerateToken(UserMaster user);
     string GenerateRefreshToken();
 }

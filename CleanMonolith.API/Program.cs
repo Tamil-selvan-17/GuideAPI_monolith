@@ -1,22 +1,18 @@
-using System.Collections.Generic;
 using System.Text;
-using System;
 using CleanMonolith.API.Middleware;
 using CleanMonolith.Application;
 using CleanMonolith.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 using Serilog;
 
+System.Net.ServicePointManager.SecurityProtocol =
+    System.Net.SecurityProtocolType.Tls12;
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog
+// ✅ Serilog
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
@@ -26,16 +22,16 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Add configuration settings
+// ✅ Controllers
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger configuration with JWT support (NSwag)
+// ✅ Swagger (NSwag)
 builder.Services.AddOpenApiDocument(document =>
 {
     document.Title = "CleanMonolith.API";
     document.Version = "v1";
-    document.AddSecurity("Bearer", System.Linq.Enumerable.Empty<string>(), new OpenApiSecurityScheme
+    document.AddSecurity("Bearer", Enumerable.Empty<string>(), new OpenApiSecurityScheme
     {
         Type = OpenApiSecuritySchemeType.Http,
         Scheme = "bearer",
@@ -45,22 +41,22 @@ builder.Services.AddOpenApiDocument(document =>
     document.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor("Bearer"));
 });
 
-// Add layers
+// ✅ Layers
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
-// Configure JWT Authentication
+// ✅ JWT Config
 var jwtSecret = builder.Configuration["JwtSettings:Secret"];
+
 if (string.IsNullOrEmpty(jwtSecret))
-{
     throw new InvalidOperationException("JWT Secret not configured");
-}
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.RequireHttpsMetadata = false;
         options.SaveToken = true;
+
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
@@ -72,39 +68,58 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
             ClockSkew = TimeSpan.Zero
         };
+
+        // ✅ Read token from cookie
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                var token = context.Request.Cookies["accessToken"];
+
+                if (!string.IsNullOrEmpty(token))
+                {
+                    context.Token = token;
+                }
+
+                return Task.CompletedTask;
+            }
+        };
     });
 
-// CORS
+// ✅ CORS (VERY IMPORTANT)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowAngular",
         policy =>
         {
-            policy.AllowAnyOrigin()
+            policy.WithOrigins("http://localhost:4200") // 🔥 must match Angular
                   .AllowAnyHeader()
-                  .AllowAnyMethod();
+                  .AllowAnyMethod()
+                  .AllowCredentials(); // 🔥 REQUIRED
         });
 });
 
-// Health checks
+// ✅ Health check
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ✅ Dev tools
 if (app.Environment.IsDevelopment())
 {
     app.UseOpenApi();
     app.UseSwaggerUi();
 }
 
+// ✅ Middleware order (IMPORTANT)
 app.UseMiddleware<GlobalExceptionMiddleware>();
-
-app.UseHttpsRedirection();
 
 app.UseSerilogRequestLogging();
 
-app.UseCors("AllowAll");
+// 🔥 CORS must come BEFORE auth
+app.UseCors("AllowAngular");
+
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
